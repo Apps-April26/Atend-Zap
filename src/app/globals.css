@@ -1,0 +1,23 @@
+:root {
+  --bg-page: #0A0A0A;
+  --bg-card: #141414;
+  --text-white: #FFFFFF;
+  --text-muted: #AAAAAA;
+  --text-subtle: #CCCCCC;
+  --border-card: rgba(255, 255, 255, 0.08);
+  --font-poppins: 'Poppins', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-page);
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

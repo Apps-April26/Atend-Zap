@@ -1,0 +1,90 @@
+.main {
+  min-height: 100vh;
+  background-color: var(--bg-page);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #888;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.backButton:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.agentInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.agentIcon {
+  width: 40px;
+  height: 40px;
+  color: var(--agent-icon-bg, #fff);
+}
+
+.agentName {
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: #fff;
+}
+
+.agentDesc {
+  font-size: 12px;
+  color: #888;
+}
+
+.widgetContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.widgetPlaceholder {
+  display: none;
+}
+
+.loadingBar {
+  width: 200px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.loadingProgress {
+  width: 40%;
+  height: 100%;
+  background: var(--agent-color, #22c55e);
+  border-radius: 2px;
+  animation: loading 1.5s ease-in-out infinite;
+}
+
+@keyframes loading {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(350%); }
+}
